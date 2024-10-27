@@ -7,11 +7,11 @@ function App() {
   return (
     
     <Router>
-    <div>
+    {/* <div> */}
     <Routes>
     <Route path='/' element={<Main />}></Route>
     </Routes>
-    </div>
+    {/* </div> */}
     </Router>
   );
 }

@@ -1,10 +1,16 @@
-import { useState } from 'react';
+import { useState ,useEffect} from 'react';
 import { Menu, X, Linkedin, Github, Facebook, Download, Instagram } from 'lucide-react';
 import Typewriter from 'typewriter-effect'; 
 import Myself from "./image/Adhavan.jpg";
+import { useLocation } from 'react-router-dom';
 
 export default function DarkPortfolio() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [activeLink, setActiveLink] = useState('#home');
+
+  const handleLinkClick = (link) => {
+    setActiveLink(link);
+  };
 
 
   return (
@@ -19,22 +25,56 @@ export default function DarkPortfolio() {
               </div>
             </div>
             <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
-              <a href="#home" className="border-indigo-500 text-white inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
-                HOME
-              </a>
-              <a href="#about" className="border-transparent text-gray-300 hover:border-gray-300 hover:text-gray-200 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
-                ABOUT ME
-              </a>
-              <a href="#skills" className="border-transparent text-gray-300 hover:border-gray-300 hover:text-gray-200 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
-                SKILLS
-              </a>
-              <a href="#project" className="border-transparent text-gray-300 hover:border-gray-300 hover:text-gray-200 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
-                PROJECT
-              </a>
-              <a href="#contact" className="border-transparent text-gray-300 hover:border-gray-300 hover:text-gray-200 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
-                CONTACT
-              </a>
-            </div>
+      <a
+        href="#home"
+        onClick={() => handleLinkClick('#home')}
+        className={`${
+          activeLink === '#home' ? 'border-indigo-500 text-white' : 'border-transparent text-gray-300 hover:border-gray-300 hover:text-gray-200'
+        } inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium`}
+      >
+        HOME
+      </a>
+
+      <a
+        href="#about"
+        onClick={() => handleLinkClick('#about')}
+        className={`${
+          activeLink === '#about' ? 'border-indigo-500 text-white' : 'border-transparent text-gray-300 hover:border-gray-300 hover:text-gray-200'
+        } inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium`}
+      >
+        ABOUT ME
+      </a>
+
+      <a
+        href="#skills"
+        onClick={() => handleLinkClick('#skills')}
+        className={`${
+          activeLink === '#skills' ? 'border-indigo-500 text-white' : 'border-transparent text-gray-300 hover:border-gray-300 hover:text-gray-200'
+        } inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium`}
+      >
+        SKILLS
+      </a>
+
+      <a
+        href="#project"
+        onClick={() => handleLinkClick('#project')}
+        className={`${
+          activeLink === '#project' ? 'border-indigo-500 text-white' : 'border-transparent text-gray-300 hover:border-gray-300 hover:text-gray-200'
+        } inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium`}
+      >
+        PROJECT
+      </a>
+
+      <a
+        href="#contact"
+        onClick={() => handleLinkClick('#contact')}
+        className={`${
+          activeLink === '#contact' ? 'border-indigo-500 text-white' : 'border-transparent text-gray-300 hover:border-gray-300 hover:text-gray-200'
+        } inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium`}
+      >
+        CONTACT
+      </a>
+    </div>
             <div className="-mr-2 flex items-center sm:hidden">
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
