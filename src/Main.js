@@ -166,7 +166,7 @@ export default function DarkPortfolio() {
                   <a
                  
                     
-                    href={'Adhavanresume.pdf'} // Path to the CV in the public folder
+                    href={'Adhavan.pdf'} // Path to the CV in the public folder
                     download = "Adhavan.pdf" // <!--This attribute forces the browser to download the file-->
                     className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700"
                   >
