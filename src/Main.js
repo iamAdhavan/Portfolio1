@@ -227,7 +227,7 @@ export default function DarkPortfolio() {
               </div>
               <div className="bg-gray-700 p-6 rounded-lg shadow-lg">
                 <h3 className="text-xl font-semibold text-white">Frameworks</h3>
-                <p className="mt-2 text-gray-300">Django</p>
+                <p className="mt-2 text-gray-300">Flask</p>
               </div>
               <div className="bg-gray-700 p-6 rounded-lg shadow-lg">
                 <h3 className="text-xl font-semibold text-white">Tools</h3>
@@ -246,7 +246,7 @@ export default function DarkPortfolio() {
               <div className="bg-gray-700 p-6 rounded-lg shadow-lg">
                 <h3 className="text-xl font-semibold text-white">Project 1</h3>
                 <p className="mt-2 text-gray-300">Description of Project 1 goes here.</p>
-                <a href="#" className="text-indigo-400 hover:underline mt-4 inline-block">View Project</a>
+                <a href="https://adhavan2024.netlify.app" className="text-indigo-400 hover:underline mt-4 inline-block">View Project</a>
               </div>
               <div className="bg-gray-700 p-6 rounded-lg shadow-lg">
                 <h3 className="text-xl font-semibold text-white">Project 2</h3>
