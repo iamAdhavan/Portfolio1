@@ -245,7 +245,7 @@ export default function DarkPortfolio() {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
               <div className="bg-gray-700 p-6 rounded-lg shadow-lg">
                 <h3 className="text-xl font-semibold text-white">Project 1</h3>
-                <p className="mt-2 text-gray-300">Description of Project 1 goes here.</p>
+                <p className="mt-2 text-gray-300">Netflix Clone</p>
                 <a href="https://adhavan2024.netlify.app" className="text-indigo-400 hover:underline mt-4 inline-block">View Project</a>
               </div>
               <div className="bg-gray-700 p-6 rounded-lg shadow-lg">
